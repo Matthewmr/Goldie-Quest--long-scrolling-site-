@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Goldie Quest Home</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="zurb6/css/foundation.css">
+    <link rel="stylesheet" href="zurb6/css/app.css">
+
+    <style media="screen">
+
+    #black{
+      background-color: black;
+    }
+
+    .center {
+      position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    }
+
+    .rel {
+      position: relative;
+    }
+
+    #begin{
+      position: absolute;
+      top:60%;
+      left: 37%;
+      width: 25%;
+      height: 13%;
+    }
+
+    #tagline{
+      position: absolute;
+      top:45%;
+      left: 0%;
+      width:35%;
+      height:50%;
+    }
+
+    #howtoplay{
+      position: absolute;
+      top:45%;
+      right:0%;
+      width:35%;
+      height:50%;
+    }
+
+    </style>
+
+  </head>
+  <body id="black">
+
+    <script type="text/javascript">
+    function PopupCenterDual(url, title, w, h) {
+    var dualScreenLeft = window.screenLeft != undefined ? window.screenLeft : screen.left;
+    var dualScreenTop = window.screenTop != undefined ? window.screenTop : screen.top;
+    width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+    height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+
+    var left = ((width / 2) - (w /2 )) + dualScreenLeft;
+    var top = ((height / 2) - (h / 2)) + dualScreenTop;
+    var newWindow = window.open(url, title, 'scrollbars=no, toolbar=no, menubar=no, width=' + w + ', height=' + h + ', top=' + top +', left=' + left);
+
+    if (window.focus) {
+    newWindow.focus();
+    }
+    }
+
+    </script>
+
+
+
+
+    <main class='grid-container'>
+
+      <!-- <div class="grid-x grid-padding-x">
+
+        <div class="cell">
+          <a onclick="PopupCenterDual('adventure.html','Adventure','657','682'); " href="javascript:void(0);">test link</a>
+
+        </div>
+
+      </div> -->
+
+      <div class="grid-x">
+
+        <div class="cell large-2">
+        </div>
+
+        <div class="cell large-8 rel">
+          <img class="size, center" src="imgs/goldtitle.png" alt="The Title">
+          <img id="begin" src="imgs/begin.png" alt="Begin Button" onclick="PopupCenterDual('adventure.html','Adventure','657','682'); ">
+          <img id="tagline" src="imgs/scroll.png" alt="a scroll which tells the story to come">
+          <img id="howtoplay" src="imgs/how_to_play.png" alt="How to play">
+        </div>
+
+        <div class="cell large-2">
+        </div>
+
+      </div>
+
+      <!-- <div class="grid-x grid-padding-x">
+
+        <div class="cell large-2">
+        </div>
+
+        <div class="cell large-8">
+          <h1> A GOLDEN QUEST </h1>
+        </div>
+
+        <div class="cell large-2">
+        </div>
+
+      </div>
+
+      <div class="grid-x grid-padding-x">
+
+        <div class="cell large-3">
+        </div>
+
+        <div class="cell large-6">
+          <p> This is  </p>
+        </div>
+
+        <div class="cell large-3">
+        </div>
+
+      </div> -->
+
+
+    </main>
+
+
+    <script src="../zurb6/js/vendor/jquery.js"></script>
+    <script src="../zurb6/js/vendor/what-input.js"></script>
+    <script src="../zurb6/js/vendor/foundation.js"></script>
+    <script src="../zurb6/js/app.js"></script>
+  </body>
+  <!-- https://docs.google.com/presentation/d/e/2PACX-1vQzMzcSgeupo5ViYqUu_P5KFNZVC0kd39yZnYlIXOAbtI-ia1YYzkJF_WQNK25vbEfTcw2IQ7lTE6jn/pub?start=false&loop=false&delayms=15000 -->
+  <!-- <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQzMzcSgeupo5ViYqUu_P5KFNZVC0kd39yZnYlIXOAbtI-ia1YYzkJF_WQNK25vbEfTcw2IQ7lTE6jn/embed?start=false&loop=false&delayms=15000" frameborder="0" width="1440" height="839" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
+</html>
